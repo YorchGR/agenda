@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">agenda</string>
+    <string name="nombre">Nombre: </string>
+    <string name="imagen_contacto">imagen del contacto</string>
+    <string name="RegistrarCont">RegistrarContacto</string>
+    <string name="hintNmbre">Nombre</string>
+    <string name="hintApll">Apellidos</string>
+    <string name="hinttlf">Teléfono</string>
+    <string name="hintFech">dd/mm/aaaa</string>
+    <string name="hintLocalidad">Localidad</string>
+    <string name="hintCalle">Calle</string>
+    <string name="hintNum">Número</string>
+    <string name="registrar">Registrar</string>
+    <string name="Resetear">Resetear</string>
+    <string name="ingresar">Registrar</string>
+    <string name="editar">Editar</string>
+    <string name="Borrar">Borrar</string>
+    <string name="Listar">Listar</string>
+    <string name="Campo_Borrar_Editar">Introduce contacto</string>
+    <string name="edita_contacto">Edita Contacto</string>
+    <string name="borrar">Borrar</string>
+</resources>

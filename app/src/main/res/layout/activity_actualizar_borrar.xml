@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ActualizarOBorrar"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/resetearBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Resetear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonBorrar" />
+
+    <Button
+        android:id="@+id/editarBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBorrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/apellidoOut"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hintApll"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/nomOut"
+        app:layout_constraintTop_toBottomOf="@+id/tvEditaContenido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="322dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nomOut"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hintNmbre"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/apellidoOut"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEditaContenido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="180dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlfOut"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hinttlf"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/apellidoOut"
+        app:layout_constraintStart_toStartOf="@+id/apellidoOut"
+        app:layout_constraintTop_toBottomOf="@+id/apellidoOut">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="180dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/calleAout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hintCalle"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/tlfOut"
+        app:layout_constraintStart_toStartOf="@+id/tlfOut"
+        app:layout_constraintTop_toBottomOf="@+id/tlfOut">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvCalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="344dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numOut"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hintNum"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="5"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/calleAout"
+        app:layout_constraintStart_toStartOf="@+id/calleAout"
+        app:layout_constraintTop_toBottomOf="@+id/calleAout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="183dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locOut"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hintLocalidad"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/numOut"
+        app:layout_constraintStart_toStartOf="@+id/numOut"
+        app:layout_constraintTop_toBottomOf="@+id/numOut">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="414dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvEditaContenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/edita_contacto"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/cvEditar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvfecha"
+        app:layout_constraintEnd_toEndOf="@+id/nomOut"
+        app:layout_constraintStart_toStartOf="@+id/nomOut"
+        app:layout_constraintTop_toBottomOf="@+id/nomOut" />
+
+    <TextView
+        android:id="@+id/tvfecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/editarBt"
+        app:layout_constraintEnd_toEndOf="@+id/cvEditar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cvEditar"
+        tools:text="Fecha" />
+
+    <Button
+        android:id="@+id/buttonBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/borrar"
+        app:layout_constraintBottom_toBottomOf="@+id/resetearBt"
+        app:layout_constraintEnd_toStartOf="@+id/resetearBt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editarBt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

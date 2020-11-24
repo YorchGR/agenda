@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Registrar">
+
+    <Button
+        android:id="@+id/buttonResetear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resetear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_Registrar"
+        app:layout_constraintTop_toBottomOf="@+id/outLoc"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <Button
+        android:id="@+id/button_Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonResetear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outLoc"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outTlf"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hinttlf"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/outApll"
+        app:layout_constraintStart_toStartOf="@+id/outApll"
+        app:layout_constraintTop_toBottomOf="@+id/outApll">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefonoTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="243dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outNom"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hintNmbre"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toStartOf="@+id/outApll"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRe">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="183dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outApll"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hintApll"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/outNom"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRe">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ApllTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="183dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outLoc"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hintLocalidad"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/outNum"
+        app:layout_constraintStart_toStartOf="@+id/outNum"
+        app:layout_constraintTop_toBottomOf="@+id/outNum">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LocTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="414dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outCalle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hintCalle"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/outTlf"
+        app:layout_constraintStart_toStartOf="@+id/outTlf"
+        app:layout_constraintTop_toBottomOf="@+id/outTlf">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/calleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="183dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outNum"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hintNum"
+        android:inputType="phone"
+        app:counterEnabled="true"
+        app:counterMaxLength="5"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/outCalle"
+        app:layout_constraintStart_toStartOf="@+id/outCalle"
+        app:layout_constraintTop_toBottomOf="@+id/outCalle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/numTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="183dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/RegistrarCont"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvfecha"
+        app:layout_constraintEnd_toStartOf="@+id/outCalle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/outTlf" />
+
+    <TextView
+        android:id="@+id/tvfecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button_Registrar"
+        app:layout_constraintEnd_toEndOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        tools:text="Fecha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
